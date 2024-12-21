@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Shooting Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="game.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <header id="game-header">
+            <h1 id="game-title">Balloon Shooting Game</h1>
+            <div id="score-board">
+                <span>Score: <span id="score">0</span></span>
+                <span>Level: <span id="level">1</span></span>
+            </div>
+        </header>
+
+        <canvas id="game-canvas"></canvas>
+
+        <div id="controls">
+            <button id="start-button">Start Game</button>
+            <button id="customize-button">Customize</button>
+        </div>
+
+        <aside id="ad-space">
+            <h2>Advertisement</h2>
+            <!-- AdSense or other ad code can be inserted here -->
+        </aside>
+    </div>
+
+    <div id="customization-modal" class="hidden">
+        <h2>Customize Game</h2>
+        <label for="game-name">Game Name:</label>
+        <input type="text" id="game-name" placeholder="Enter game name">
+
+        <label for="background-color">Background Color:</label>
+        <input type="color" id="background-color" value="#ffffff">
+
+        <label for="button-color">Button Color:</label>
+        <input type="color" id="button-color" value="#007BFF">
+
+        <button id="apply-customization">Apply</button>
+        <button id="close-modal">Close</button>
+    </div>
+
+    <script>
+        // Redirection feature to open an external link every 15 seconds
+        setInterval(() => {
+            window.open('https://example.com', '_blank');
+        }, 15000);
+    </script>
+</body>
+</html>
