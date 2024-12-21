@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game-title {
+    font-size: 2rem;
+    color: #333;
+}
+
+#score-board {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Canvas Styling */
+#game-canvas {
+    border: 2px solid #333;
+    background-color: #87CEEB;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+/* Controls Styling */
+#controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Customization Modal */
+#customization-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+}
+
+#customization-modal h2 {
+    margin-top: 0;
+}
+
+#customization-modal label {
+    display: block;
+    margin-top: 10px;
+}
+
+#customization-modal input {
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ad Space */
+#ad-space {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    padding: 10px;
+}
+
+#ad-space h2 {
+    font-size: 1rem;
+    color: #777;
+}
